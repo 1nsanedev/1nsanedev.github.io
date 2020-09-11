@@ -2,32 +2,31 @@
 <html lang="en">
 
 <head>
-
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="UTF-8">
+	<title>1nsane.dev - Home</title>
 
-	<link rel="stylesheet" type="text/css" href="static/css/main.css?v=8">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css?v=9">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
 		integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
-	<script src="static/js/main.js?v=3"></script>
-
-	<title>1nsane.dev - Home</title>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10" crossorigin="anonymous"></script>
+	<script src="static/js/main.js?v=4"></script>
 </head>
 
 <body class="dark">
+	<a href="https://twitter.com/intent/follow?screen_name=1nsane_dev" id="twitter-corner"><i
+			class="fab fa-twitter"></i></a>
 	<div id="main" class="main">
 
-		<img src="static/img/banner.jpg" alt="Banner Image" class="align">
-
+		<img src="static/img/profile.jpg" alt="Profile Image" class="align profile-img">
 		<div class="text">
-
 			<div id="intro">
 				<h1 id="name">Giulio Zompetti</h1>
-				<h2 id="name-s" class="lightblue">@1nsane_dev</h2>
+				<div id="name-s" class="lightblue">@1nsane_dev</div>
 
 				<div class="p" id="brief-desc">
 					Welcome to my web page. Some of the stuff I do will be reported below.
@@ -39,20 +38,20 @@
 						<i class="fas fa-chevron-right"></i>
 					</a>
 				</div>
-
 			</div>
 
 			<div id="tabs" class="tab-controller">
 				<div class="tab tab-active-dark" id="thread-tab-div">
-					<a href="#tabs" id="thread-tab">Threads</a>
+					<a href="#tabs" class="atab">Threads</a>
 				</div>
-
+				<div class="tab" id="collection-tab-div">
+					<a href="#tabs" class="atab">Collection</a>
+				</div>
 				<div class="tab" id="download-tab-div">
-					<a href="#tabs" id="download-tab">Products</a>
+					<a href="#tabs" class="atab">Products</a>
 				</div>
-
 				<div class="tab" id="support-tab-div">
-					<a href="#tabs" id="support-tab">Support</a>
+					<a href="#tabs" class="atab">Support</a>
 				</div>
 			</div>
 
@@ -60,7 +59,32 @@
 				<div id="thread-tab-contents">
 
 					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">I wanted to share with you some details about the <a
+									href="https://twitter.com/hashtag/TouchID?src=hash&amp;ref_src=twsrc%5Etfw">#TouchID</a>
+								security
+								system, implemented across 2013 <a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>
+								5S all the way up
+								to 2020 iPhone SE 2nd Gen (and many <a
+									href="https://twitter.com/hashtag/iPad?src=hash&amp;ref_src=twsrc%5Etfw">#iPad</a>
+								and <a
+									href="https://twitter.com/hashtag/MacBook?src=hash&amp;ref_src=twsrc%5Etfw">#MacBook</a>
+								models as
+								well).<br><br>1/ TouchID is a security system handled by Secure Enclave Professor (SEP).
+								<a href="https://t.co/wyy8zA08Fd">pic.twitter.com/wyy8zA08Fd</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti
+							(@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1288507526317854726?ref_src=twsrc%5Etfw">July
+								29,
+								2020</a>
+						</blockquote>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
 						<blockquote class="twitter-tweet">
 							<p lang="en" dir="ltr">This is a thread on what we know about Apple’s prototyping and
 								development process of manufactured products.<br><br>1/ All info here could be
@@ -74,13 +98,11 @@
 								href="https://twitter.com/1nsane_dev/status/1217524821174771713?ref_src=twsrc%5Etfw">January
 								15, 2020</a>
 						</blockquote>
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 						<div class="separator"></div>
 					</div>
 
 					<div class="post">
-
 						<blockquote class="twitter-tweet">
 							<p lang="en" dir="ltr"><a
 									href="https://twitter.com/axi0mX?ref_src=twsrc%5Etfw">@axi0mX</a>’s <a
@@ -94,34 +116,455 @@
 								href="https://twitter.com/1nsane_dev/status/1177856941139337216?ref_src=twsrc%5Etfw">September
 								28, 2019</a>
 						</blockquote>
-						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 						<div class="separator"></div>
 					</div>
 
 				</div>
 
-				<div id="download-tab-contents" style="display: none;">
+				<div id="collection-tab-contents" style="display: none;">
 					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Here is a prototype of the first generation <a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>.<br>This
+								device lacks of the ‘iPhone’ label on the back. <br>Codename: ‘Purple’. <br>Model
+								identifier: M68. <br>It comes with nonUI <a
+									href="https://twitter.com/hashtag/iOS?src=hash&amp;ref_src=twsrc%5Etfw">#iOS</a>
+								1.1.3 (based on Tahoe 4A86 Build), which was still called ‘OS X’ back at those times. <a
+									href="https://t.co/SOGIPY4Pny">pic.twitter.com/SOGIPY4Pny</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1303052948361052165?ref_src=twsrc%5Etfw">September
+								7, 2020</a>
+						</blockquote>
 
-						<a class="link" href="#!">
-							<h3 class="lightblue">DCSD</h3>
-							<div class="desc">Posted on 04.06.2020</div>
-							<img class="align post" alt="DCSD Purchase Link" src="static/img/dcsd.jpg">
-							Click the button below to order DCSD cable from our trusted partners.<br><br>
-						</a>
-						<br>
-						<br>
-						<a href="https://cutt.ly/6yCbJpi" target="_blank" class="buy-button">Order now!&nbsp;&nbsp;&nbsp;(Europe)</a>
-						<br>
-						<br>
-						<a href="https://cutt.ly/ByCbAsN" target="_blank" class="buy-button">Order now!&nbsp;(United States)</a>
 						<div class="separator"></div>
 					</div>
 
 					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr"><a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>
+								3GS prototype <br>running nonUI <a
+									href="https://twitter.com/hashtag/iOS?src=hash&amp;ref_src=twsrc%5Etfw">#iOS</a>
+								3.0<a
+									href="https://twitter.com/hashtag/Apple?src=hash&amp;ref_src=twsrc%5Etfw">#Apple</a>
+								<a
+									href="https://twitter.com/hashtag/Prototype?src=hash&amp;ref_src=twsrc%5Etfw">#Prototype</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a href="https://t.co/25HPG9g4RS">pic.twitter.com/25HPG9g4RS</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1297253253911060480?ref_src=twsrc%5Etfw">August
+								22, 2020</a>
+						</blockquote>
 
-						<a class="link link-restrict-phone" href="https://mega.nz/file/TYpByCxA#08zYnZu1J7KzeNi4mJTJsrzgicnPsbA9KSuoYraVHl0">
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">FCC for compliance test <a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a href="https://twitter.com/hashtag/iPod?src=hash&amp;ref_src=twsrc%5Etfw">#iPod</a>
+								touch 6th generation. <a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/Ra0ZTgNl9U">pic.twitter.com/Ra0ZTgNl9U</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1278300367793598466?ref_src=twsrc%5Etfw">July
+								1, 2020</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Best unit of my whole collection.<a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a href="https://twitter.com/hashtag/iPod?src=hash&amp;ref_src=twsrc%5Etfw">#iPod</a>
+								touch 3 with rear camera, a feature that wasn’t present on the related production
+								device.<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a href="https://twitter.com/hashtag/Apple?src=hash&amp;ref_src=twsrc%5Etfw">#Apple</a>
+								<a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/SeVxBvTL8w">pic.twitter.com/SeVxBvTL8w</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1265730433402187782?ref_src=twsrc%5Etfw">May
+								27, 2020</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Pre-production <a
+									href="https://twitter.com/hashtag/AppleWatch?src=hash&amp;ref_src=twsrc%5Etfw">#AppleWatch</a>
+								<a
+									href="https://twitter.com/hashtag/prototypes?src=hash&amp;ref_src=twsrc%5Etfw">#prototypes</a>
+								at PreEVT stage.<br>This particular design didn’t make it to the mass production.<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a href="https://t.co/Nb4LrDL649">pic.twitter.com/Nb4LrDL649</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1245687437612978177?ref_src=twsrc%5Etfw">April
+								2, 2020</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="fr" dir="ltr"><a
+									href="https://twitter.com/hashtag/Prototype?src=hash&amp;ref_src=twsrc%5Etfw">#Prototype</a>
+								N82AP (DVT <a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>
+								3G)<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/I2cvJ35xpz">pic.twitter.com/I2cvJ35xpz</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1221096185248866304?ref_src=twsrc%5Etfw">January
+								25, 2020</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">1/ It’s been a year since I started collecting rare <a
+									href="https://twitter.com/hashtag/Apple?src=hash&amp;ref_src=twsrc%5Etfw">#Apple</a>
+								devices. This evolved so fast, and thanks to this, I got in touch with amazing people,
+								been in awesome places, and last but of course not least, I learnt a lot.<br>I’m
+								thankful for the journey up to this point. <a
+									href="https://t.co/gl5dmIMrko">pic.twitter.com/gl5dmIMrko</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1217133943759216640?ref_src=twsrc%5Etfw">January
+								14, 2020</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">DVT <a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								iPhone 8 Plus.<br>The codename of this device is McLaren.<br><br>This device was
+								internally used for Voice Quality (+ RF) tests.<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a href="https://t.co/mRlfbUeYrR">pic.twitter.com/mRlfbUeYrR</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1201620016220790784?ref_src=twsrc%5Etfw">December
+								2, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Different <a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>
+								prototypes booting engineering OS (<a
+									href="https://twitter.com/hashtag/switchboard?src=hash&amp;ref_src=twsrc%5Etfw">#switchboard</a>)<a
+									href="https://twitter.com/hashtag/Apple?src=hash&amp;ref_src=twsrc%5Etfw">#Apple</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/ElpmhgvclA">pic.twitter.com/ElpmhgvclA</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1193543095402541057?ref_src=twsrc%5Etfw">November
+								10, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Early <a
+									href="https://twitter.com/hashtag/Prototype?src=hash&amp;ref_src=twsrc%5Etfw">#Prototype</a>
+								iPhone 5S from 2012<br>N53AP, running an iOS 6.0 build. <a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a href="https://t.co/CASdRRyDkS">pic.twitter.com/CASdRRyDkS</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1170728738729996289?ref_src=twsrc%5Etfw">September
+								8, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="fr" dir="ltr"><a
+									href="https://twitter.com/hashtag/Prototype?src=hash&amp;ref_src=twsrc%5Etfw">#Prototype</a>
+								iPhone 4S <br>-v boot-arg set on N94AP_DVT <a
+									href="https://t.co/ZwDGqXBlY7">pic.twitter.com/ZwDGqXBlY7</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1168530952269848576?ref_src=twsrc%5Etfw">September
+								2, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="fr" dir="ltr">N94AP_DVT NonUI 5.0 (9A2264r) <br>Prototype iPhone 4S. <a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a href="https://t.co/COK38XHbth">pic.twitter.com/COK38XHbth</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1168510040677990403?ref_src=twsrc%5Etfw">September
+								2, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Internal UI iOS 3.0 (7A187a), running on an Development Insecure
+								N88AP (EVT Red MLB, SoC detail below) <a
+									href="https://t.co/SwoZnRPSuQ">pic.twitter.com/SwoZnRPSuQ</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1159544107078959106?ref_src=twsrc%5Etfw">August
+								8, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">iPhone <a
+									href="https://twitter.com/hashtag/Prototypes?src=hash&amp;ref_src=twsrc%5Etfw">#Prototypes</a><br>Models
+								6S Plus, 7Plus, DVT/EVT Stages.<br>rt if you want to see what’s different compared to
+								production devices in a future tear down.<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a><a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/mMAiy9jxI0">pic.twitter.com/mMAiy9jxI0</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1128402468268924929?ref_src=twsrc%5Etfw">May
+								14, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="de" dir="ltr"><a
+									href="https://twitter.com/hashtag/Prototype?src=hash&amp;ref_src=twsrc%5Etfw">#Prototype</a>
+								XR<br><br>Verbose boot. <a
+									href="https://twitter.com/hashtag/Apple?src=hash&amp;ref_src=twsrc%5Etfw">#Apple</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a
+									href="https://twitter.com/hashtag/iPhone?src=hash&amp;ref_src=twsrc%5Etfw">#iPhone</a>
+								<a href="https://t.co/700W5eh57r">pic.twitter.com/700W5eh57r</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1089175046474604545?ref_src=twsrc%5Etfw">January
+								26, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Here are two amazing devices from my collection: two variants of <a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a href="https://twitter.com/hashtag/N94AP?src=hash&amp;ref_src=twsrc%5Etfw">#N94AP</a>
+								both from 2010.<br>iPhone 4S (N94AP) was officially released in Oct 2011. First variant
+								runs a nonUI <a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								build, second variant runs an Internal Build of iOS. <a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/AppleCollection?src=hash&amp;ref_src=twsrc%5Etfw">#AppleCollection</a>
+								<a href="https://t.co/ZXyEAjMx9E">pic.twitter.com/ZXyEAjMx9E</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1080889422961430528?ref_src=twsrc%5Etfw">January
+								3, 2019</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">SwitchBoard system, different builds running on different prototype
+								devices.<a
+									href="https://twitter.com/hashtag/SwitchBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwitchBoard</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/prototypes?src=hash&amp;ref_src=twsrc%5Etfw">#prototypes</a>
+								<a href="https://twitter.com/hashtag/apple?src=hash&amp;ref_src=twsrc%5Etfw">#apple</a>
+								<a href="https://t.co/2grFvqdpnc">pic.twitter.com/2grFvqdpnc</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1062482153890553861?ref_src=twsrc%5Etfw">November
+								13, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">New prototype joins my collection! <br>iPod touch model N102AP early
+								prototype.<br>SWB Version 12H10570d <br>I had never seen before a white port
+								equipment.<br> <a
+									href="https://twitter.com/hashtag/SwicthBoard?src=hash&amp;ref_src=twsrc%5Etfw">#SwicthBoard</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a href="https://t.co/6n6hLyqByl">pic.twitter.com/6n6hLyqByl</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1054711263899631616?ref_src=twsrc%5Etfw">October
+								23, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Development + Insecure <a
+									href="https://twitter.com/hashtag/PurpleRestore?src=hash&amp;ref_src=twsrc%5Etfw">#PurpleRestore</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<br>@Odder_app @CthulhuDev <a
+									href="https://twitter.com/URedditor?ref_src=twsrc%5Etfw">@URedditor</a> <a
+									href="https://twitter.com/_3xpl0itz?ref_src=twsrc%5Etfw">@_3xpl0itz</a> <a
+									href="https://twitter.com/OkemoZurs?ref_src=twsrc%5Etfw">@OkemoZurs</a>
+								@jormivonhammer <a href="https://t.co/zhKRFTii2r">pic.twitter.com/zhKRFTii2r</a></p>
+							&mdash; 🔥🌸 Giulio Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/1002119774627868673?ref_src=twsrc%5Etfw">May
+								31, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">D201AP PVT on SWB11.0 home And N71AP PVT running DropTest in SWB9.0
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/ApplePrototype?src=hash&amp;ref_src=twsrc%5Etfw">#ApplePrototype</a>
+								<a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a
+									href="https://twitter.com/hashtag/purplerestore?src=hash&amp;ref_src=twsrc%5Etfw">#purplerestore</a>
+								<a
+									href="https://twitter.com/hashtag/PurpleRestoreCLI?src=hash&amp;ref_src=twsrc%5Etfw">#PurpleRestoreCLI</a>
+								<a href="https://t.co/vheCsFUjrE">pic.twitter.com/vheCsFUjrE</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/976422660023439360?ref_src=twsrc%5Etfw">March
+								21, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="it" dir="ltr">D201AP PVT running nonUI TigrisAni 11.0 <a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a
+									href="https://twitter.com/hashtag/purplerestore?src=hash&amp;ref_src=twsrc%5Etfw">#purplerestore</a>
+								<a href="https://t.co/PJkHFyk9il">pic.twitter.com/PJkHFyk9il</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/974204527695093761?ref_src=twsrc%5Etfw">March
+								15, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">different boot-args with D201AP iPhone 8, now running Diags <a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/purplerestore?src=hash&amp;ref_src=twsrc%5Etfw">#purplerestore</a>
+								<a href="https://twitter.com/hashtag/DCSD?src=hash&amp;ref_src=twsrc%5Etfw">#DCSD</a> <a
+									href="https://twitter.com/hashtag/Engineering?src=hash&amp;ref_src=twsrc%5Etfw">#Engineering</a>
+								<a href="https://t.co/kjxaGyPnE3">pic.twitter.com/kjxaGyPnE3</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/970940821192298496?ref_src=twsrc%5Etfw">March
+								6, 2018</a>
+						</blockquote>
+
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<blockquote class="twitter-tweet">
+							<p lang="en" dir="ltr">Finally got D201AP iPhone 8 <a
+									href="https://twitter.com/hashtag/prototype?src=hash&amp;ref_src=twsrc%5Etfw">#prototype</a>
+								<a
+									href="https://twitter.com/hashtag/AppleInternal?src=hash&amp;ref_src=twsrc%5Etfw">#AppleInternal</a>
+								<a
+									href="https://twitter.com/hashtag/purplerestore?src=hash&amp;ref_src=twsrc%5Etfw">#purplerestore</a>
+								<a href="https://twitter.com/hashtag/DCSD?src=hash&amp;ref_src=twsrc%5Etfw">#DCSD</a> <a
+									href="https://twitter.com/hashtag/Engineering?src=hash&amp;ref_src=twsrc%5Etfw">#Engineering</a>
+								<a href="https://t.co/qBEYMIH6Dm">pic.twitter.com/qBEYMIH6Dm</a></p>&mdash; 🔥🌸 Giulio
+							Zompetti (@1nsane_dev) <a
+								href="https://twitter.com/1nsane_dev/status/970723378020700160?ref_src=twsrc%5Etfw">March
+								5, 2018</a>
+						</blockquote>
+					</div>
+				</div>
+
+				<div id="download-tab-contents" style="display: none;">
+					<div class="post">
+						<a class="link" href="#!">
+							<h3 class="lightblue">DCSD</h3>
+							<div class="desc">Posted on 04.06.2020</div>
+							<img class="align post" alt="DCSD Purchase Link" src="static/img/dcsd.png">
+							Click the button below to order DCSD cable from our trusted partners.<br><br>
+						</a>
+						<br>
+						<br>
+						<a href="https://cutt.ly/6yCbJpi" target="_blank" class="buy-button">Order
+							now!&nbsp;&nbsp;&nbsp;(Europe)</a>
+						<br>
+						<br>
+						<a href="https://cutt.ly/ByCbAsN" target="_blank" class="buy-button">Order now!&nbsp;(United
+							States)</a>
+						<div class="separator"></div>
+					</div>
+
+					<div class="post">
+						<a class="link link-restrict-phone" href="#!">
 							<h3 class="lightblue">Purple</h3>
 							<div class="desc">Posted on 22.07.2020</div>
 							<div class="mobile-warning-div" style="display: none;">
@@ -129,17 +572,23 @@
 									a computer to get started.</p>
 							</div>
 							<img class="align post" alt="Purple Lite Image" src="static/img/purple-lite.png?v=1">
-							<b>SHA256</b>: <span
-								class="purple-sha">fe7c0db331eaa827658906fb12291a46007cc621e9d8ee2bdc6e13fc0223462c</span><br><br>
+							<!--<b>SHA256</b>: <span
+								class="purple-sha">fe7c0db331eaa827658906fb12291a46007cc621e9d8ee2bdc6e13fc0223462c</span><br><br>-->
+
+							<!-- temporary -->
+							<b style="color: red;">TEMPORARILY UNAVAILABLE, Check back later</b><br><br>
+							<!-- end temporary -->
 							<b>Version</b>: 2.0.1 beta2<br>
 							<b>Platform</b>: best on 10.14.x (all others are experimental)<br>
-							<b>Supported devices</b>: iPhone 6 to X, iPad mini 4, iPad 5, iPad 6, iPad Pro 2nd Gen (10.5, 12.9). Experimental support for iPad Air 2.<br><br>
+							<b>Supported devices</b>: iPhone 6 to X, iPad mini 4, iPad 5, iPad 6, iPad Pro 2nd Gen
+							(10.5, 12.9). Experimental support for iPad Air 2.<br><br>
 							Changelog:<br>
-							2.0.1b2:  Fixed Platform error for iPad Air 2.
-							2.0.1b1:  Added experimental support for iPad Air 2. Experimental fix for some bugs on 6SP.
-							2.0b1:   Added support for some iPads. Bug fixes on A9 iPhones.
-							1.3b2:   Added support for A8 and A9 iPhones.<br>
-							1.3b1:   Improved performances, several bug fixes.<br>
+							2.0.1b2: Fixed Platform error for iPad Air 2.<br>
+							2.0.1b1: Added experimental support for iPad Air 2. Experimental fix for some bugs on
+							6SP.<br>
+							2.0b1: Added support for some iPads. Bug fixes on A9 iPhones.<br>
+							1.3b2: Added support for A8 and A9 iPhones.<br>
+							1.3b1: Improved performances, several bug fixes.<br>
 							1.2.1: Improved performances, added experimental support for multiple macOS
 							versions.<br><br>
 
@@ -151,8 +600,8 @@
 						<div class="separator"></div>
 					</div>
 
-					<div class="post">
-
+					<!--
+						<div class="post">
 						<a class="link" href="#!">
 							<h3 class="lightblue">Purple PRO</h3>
 							<div class="desc">Posted on 19.05.2020</div>
@@ -166,6 +615,7 @@
 						</a>
 						<div class="separator"></div>
 					</div>
+					-->
 
 				</div>
 
@@ -190,13 +640,17 @@
 						<div class="separator"></div>
 
 						<b>Q</b>: How do I solve the 'damaged, move to trash' error?<br>
-						<b>A</b>: Please download latest release, move Purple to /Applications, open Terminal.app and type 'sudo xattr -cr /Applications/Purple.app' without quotes. Confirm with password. This is a temporary workaround, hopefully will be fixed soon.<br>
+						<b>A</b>: Please download latest release, move Purple to /Applications, open Terminal.app and
+						type 'sudo xattr -cr /Applications/Purple.app' without quotes. Confirm with password. This is a
+						temporary workaround, hopefully will be fixed soon.<br>
 						<div class="separator"></div>
 
 						<b>Q</b>: How can I solve 'error sending exploit'?<br>
 						<b>A</b>: This software relies on pre-written exploits (checkm8 based) which sometimes may
 						result unreliable and fail. If you get this error, reboot the device, re-connect it in DFU mode
-						and retry. CATALINA USERS: please install brew from brew.sh and install libusb (in terminal type 'brew install libusb' without quotes before use the actual release. This is a temporary workaround, hopefully will be fixed soon.<br>
+						and retry. CATALINA USERS: please install brew from brew.sh and install libusb (in terminal type
+						'brew install libusb' without quotes before use the actual release. This is a temporary
+						workaround, hopefully will be fixed soon.<br>
 						<div class="separator"></div>
 
 						<b>Q</b>: I can't get this software to work properly.<br>
@@ -214,7 +668,7 @@
 						<div class="separator"></div>
 
 						<a class="hitCounter" href="#!" title="Counter"
-							data-name="8c9d817fbf5dcadb05d0ff529e9d9463|5|ip|1|#000000|#9c9c9c|small|s-hit">Hit
+							data-name="8c9d817fbf5dcadb05d0ff529e9d9463|5|ip|1|#191919|#9c9c9c|small|s-hit">Hit
 							Counter</a>
 						<script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v=" + Date.now() + "'><\/script>");</script>
 					</div>
@@ -225,18 +679,17 @@
 			<div class="p">
 				<h2>Donate</h2>
 				<div>
-					If you want to support the developer, consider donating through the PayPal button below. Thank you :)
+					If you want to support the developer, consider donating through the options below. Thank you
+					&colon;&#41;
 				</div>
 
-				<form style="text-align: center; margin-top: 20px;" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick" />
-					<input type="hidden" name="hosted_button_id" value="ZMN6KUUTPBT64" />
-					<input type="image"
-						src="https://github.com/1nsanedev/1nsanedev.github.io/blob/master/donate.png?raw=true"
-						border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
-						alt="Donate with PayPal button" />
-					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+				<div id="crypto-addr">
+					<div class="crypto-align">
+						<img class="crypto-img" id="btc-crypto" src="static/img/btc.svg">
+						<img class="crypto-img" id="eth-crypto" src="static/img/eth.svg">
+						<img class="crypto-img" id="ltc-crypto" src="static/img/ltc.svg">
+					</div>
+				</div>
 			</div>
 
 			<div class="p">

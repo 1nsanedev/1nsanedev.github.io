@@ -1,14 +1,9 @@
-@font-face {
-    font-family: Courier-New;
-    src: url(../font/cour.ttf);
-}
-
 div.tab {
     float: left;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
-    width: 33%;
+    width: 25%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -28,7 +23,9 @@ div.tab-active-dark {
 
 div.tabs-content {
     clear: both;
-    padding-top: 15px;
+    padding-top: 4vh;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 div.post {
@@ -50,7 +47,7 @@ a.link {
 
 body,html {
     overflow-x: hidden;
-    font-family: Courier-New;
+    font-family: 'Fira Code', monospace;
 }
 
 body {
@@ -64,7 +61,7 @@ div.main {
 
 div.text {
     margin: 8px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 h1,h3,h4 {
@@ -138,6 +135,14 @@ img.align {
     background-size: contain;
 }
 
+.profile-img {
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+}
+
 div.citation {
     padding-top: 10px;
     margin-left: 5%;
@@ -171,39 +176,70 @@ div.separator {
 }
 
 body.dark {
-    background-color: #000;
-    color: #fff;
+    background-color: rgb(25, 25, 25);
+    color: rgb(170, 170, 170);
 }
 
 footer.dark {
     background-color: #191919;
 }
 
-#download-tab,#thread-tab, #support-tab,.link-clear {
+#twitter-corner:link, #twitter-corner:visited {
     text-decoration: none;
-    color: #fff
+    color: #4DDDF4;
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    font-size: 21px;
+}
+
+.atab, .link-clear {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .atab {
+        font-size: 0.9rem;
+    }
 }
 
 #name {
     margin-bottom: 7px;
+    font-size: 1.7rem;
 }
 
 #name-s {
-    font-size: 1.5rem;
-    margin-top: 0;
+    margin: 20px 0px 20px 0px;
 }
 
 #intro {
     text-align: center;
-    min-height: 80vh;
+    min-height: 70vh;
 }
 
 #brief-desc {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-left: 6%;
+    margin-right: 6%;
 }
 
 #continue {
-    margin-top: 20vh;
+    margin-top: 15vh;
+}
+
+#crypto-addr {
+    margin-top: 40px;
+}
+
+.crypto-img {
+    width: 50px;
+    height: 50px;
+    margin: 0px 20px 0px 20px;
+}
+
+.crypto-align {
+    text-align: center;
 }
 
 .lightblue {

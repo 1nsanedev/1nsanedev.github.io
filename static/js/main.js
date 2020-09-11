@@ -16,57 +16,132 @@ $(document).ready(function () {
         $(".mobile-warning-div").show();
     }
 
-    $("#thread-tab").on("click", function () {
+    $(".atab").on("click", function () {
+        
+        var tab = $(this).html().toLowerCase();
 
-        if ($("#download-tab-contents").is(":visible")) {
-            $("#download-tab-contents").hide();
+        switch (tab) {
+            case "threads": 
+                $("#collection-tab-contents").hide();
+                $("#download-tab-contents").hide();
+                $("#support-tab-contents").hide();
+                $("#collection-tab-div").removeClass("tab-active-dark");
+                $("#download-tab-div").removeClass("tab-active-dark");
+                $("#support-tab-div").removeClass("tab-active-dark");
+                $("#thread-tab-div").addClass("tab-active-dark");
+                $("#thread-tab-contents").show();
+                break;
+
+            case "collection":
+                $("#thread-tab-contents").hide();
+                $("#download-tab-contents").hide();
+                $("#support-tab-contents").hide();
+                $("#thread-tab-div").removeClass("tab-active-dark");
+                $("#download-tab-div").removeClass("tab-active-dark");
+                $("#support-tab-div").removeClass("tab-active-dark");
+                $("#collection-tab-div").addClass("tab-active-dark");
+                $("#collection-tab-contents").show(); 
+            break;
+
+            case "products": 
+                $("#thread-tab-contents").hide();
+                $("#collection-tab-contents").hide();
+                $("#support-tab-contents").hide();
+                $("#collection-tab-div").removeClass("tab-active-dark");
+                $("#thread-tab-div").removeClass("tab-active-dark");
+                $("#support-tab-div").removeClass("tab-active-dark");
+                $("#download-tab-div").addClass("tab-active-dark");
+                $("#download-tab-contents").show();
+            break;
+
+            case "support":
+                $("#thread-tab-contents").hide(); 
+                $("#collection-tab-contents").hide();
+                $("#download-tab-contents").hide();
+                $("#collection-tab-div").removeClass("tab-active-dark");
+                $("#thread-tab-div").removeClass("tab-active-dark");
+                $("#download-tab-div").removeClass("tab-active-dark");
+                $("#support-tab-div").addClass("tab-active-dark");
+                $("#support-tab-contents").show();
+            break;
         }
-
-        if ($("#support-tab-contents").is(":visible")) {
-            $("#support-tab-contents").hide();
-        }
-
-        $("#download-tab-div").removeClass("tab-active-dark");
-        $("#support-tab-div").removeClass("tab-active-dark");
-
-        $("#thread-tab-div").addClass("tab-active-dark");
-
-        $("#thread-tab-contents").show();
     });
 
-    $("#download-tab").on("click", function () {
+    $("#btc-crypto").on("click", function() {
+        Swal.fire({
+        title: 'Bitcoin',
+        width: 400,
+        text: '39TU9TUQVyQDDnP7yr8Qd6jq79TJM6BQJj',
+        imageUrl: 'static/img/bitcoin.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        confirmButtonText: `Copy Address`,
+        imageAlt: 'Bitcoin Address'
+        }).then((result) => {
+            if (result.isConfirmed) {
 
-        if ($("#thread-tab-contents").is(":visible")) {
-            $("#thread-tab-contents").hide();
-        }
+                Swal.fire({
+                    width: 250,
+                    icon: 'success',
+                    title: 'Copied',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
 
-        if ($("#support-tab-contents").is(":visible")) {
-            $("#support-tab-contents").hide();
-        }
-
-        $("#thread-tab-div").removeClass("tab-active-dark");
-        $("#support-tab-div").removeClass("tab-active-dark");
-
-        $("#download-tab-div").addClass("tab-active-dark");
-
-        $("#download-tab-contents").show();
+                navigator.clipboard.writeText('39TU9TUQVyQDDnP7yr8Qd6jq79TJM6BQJj');
+            }
+        });
     });
 
-    $("#support-tab").on("click", function () {
+    $("#eth-crypto").on("click", function() {
+        Swal.fire({
+        title: 'Ethereum',
+        width: 400,
+        text: '0xc3a52e81dba203cAD8De692676264b405888d010',
+        imageUrl: 'static/img/ethereum.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        confirmButtonText: `Copy Address`,
+        imageAlt: 'Ethereum Address',
+        }).then((result) => {
+            if (result.isConfirmed) {
 
-        if ($("#download-tab-contents").is(":visible")) {
-            $("#download-tab-contents").hide();
-        }
+                Swal.fire({
+                    width: 250,
+                    icon: 'success',
+                    title: 'Copied',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
 
-        if ($("#thread-tab-contents").is(":visible")) {
-            $("#thread-tab-contents").hide();
-        }
+                navigator.clipboard.writeText('0xc3a52e81dba203cAD8De692676264b405888d010');
+            }
+        });
+    });
 
-        $("#thread-tab-div").removeClass("tab-active-dark");
-        $("#download-tab-div").removeClass("tab-active-dark");
+    $("#ltc-crypto").on("click", function() {
+        Swal.fire({
+        title: 'Litecoin',
+        width: 400,
+        text: 'MTW8EKQoQJgoX3VjQkjaWD5v39bNSYuqdY',
+        imageUrl: 'static/img/litecoin.jpg',
+        imageWidth: 300,
+        imageHeight: 300,
+        confirmButtonText: `Copy Address`,
+        imageAlt: 'Litecoin Address',
+        }).then((result) => {
+            if (result.isConfirmed) {
 
-        $("#support-tab-div").addClass("tab-active-dark");
+                Swal.fire({
+                    width: 250,
+                    icon: 'success',
+                    title: 'Copied',
+                    showConfirmButton: false,
+                    timer: 1000
+                });
 
-        $("#support-tab-contents").show();
+                navigator.clipboard.writeText('MTW8EKQoQJgoX3VjQkjaWD5v39bNSYuqdY');
+            }
+        });
     });
 });
