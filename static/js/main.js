@@ -66,17 +66,37 @@ $(document).ready(function () {
             break;
         }
     });
+    
+  $("#beta-software").on("click", function(e) {
+
+      e.preventDefault();
+
+        Swal.fire({
+            title: '<span style="color: red">Warning</span>', 
+            html: '<span style="color: white">THIS IS A BETA RELEASE! UNEXPECTED ERRORS IN THE PROGRAM MAY OCCUR. THE DEVELOPER OF THIS SOFTWARE ASSUMES NO LIABILITY FOR POSSIBLE DAMAGE TO EQUIPMENT USED INCLUDING BUT NOT LIMITED TO DATA LOSS. ONLY USE THIS SOFTWARE IF YOU KNOW WHAT YOU ARE DOING. THE USE OF THIS SOFTWARE IS AT YOUR OWN RISK!</span>',
+            icon: 'warning',
+            confirmButtonText: 'I understand, take me to download',
+            confirmButtonColor: 'red',
+            focusConfirm: false,
+            background: '#222222'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                location.href = e.href;
+            }
+        });
+   });
 
     $("#btc-crypto").on("click", function() {
         Swal.fire({
-        title: 'Bitcoin',
+        title: '<span style="color: white">Bitcoin</span>',
         width: 400,
-        text: '39TU9TUQVyQDDnP7yr8Qd6jq79TJM6BQJj',
+        html: '<span style="color: white">39TU9TUQVyQDDnP7yr8Qd6jq79TJM6BQJj</span>',
         imageUrl: 'static/img/bitcoin.jpg',
         imageWidth: 300,
         imageHeight: 300,
         confirmButtonText: `Copy Address`,
-        imageAlt: 'Bitcoin Address'
+        imageAlt: 'Bitcoin Address',
+        background: '#222222'
         }).then((result) => {
             if (result.isConfirmed) {
 
@@ -95,14 +115,15 @@ $(document).ready(function () {
 
     $("#eth-crypto").on("click", function() {
         Swal.fire({
-        title: 'Ethereum',
+        title: '<span style="color: white">Ethereum</span>',
         width: 400,
-        text: '0xc3a52e81dba203cAD8De692676264b405888d010',
+        html: '<span style="color: white">0xc3a52e81dba203cAD8De692676264b405888d010</span>',
         imageUrl: 'static/img/ethereum.jpg',
         imageWidth: 300,
         imageHeight: 300,
         confirmButtonText: `Copy Address`,
         imageAlt: 'Ethereum Address',
+        background: '#222222'
         }).then((result) => {
             if (result.isConfirmed) {
 
@@ -121,14 +142,15 @@ $(document).ready(function () {
 
     $("#ltc-crypto").on("click", function() {
         Swal.fire({
-        title: 'Litecoin',
+        title: '<span style="color: white">Litecoin</span>',
         width: 400,
-        text: 'MTW8EKQoQJgoX3VjQkjaWD5v39bNSYuqdY',
+        html: '<span style="color: white">MTW8EKQoQJgoX3VjQkjaWD5v39bNSYuqdY</span>',
         imageUrl: 'static/img/litecoin.jpg',
         imageWidth: 300,
         imageHeight: 300,
         confirmButtonText: `Copy Address`,
         imageAlt: 'Litecoin Address',
+        background: '#222222'
         }).then((result) => {
             if (result.isConfirmed) {
 
