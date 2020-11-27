@@ -81,7 +81,7 @@ $(document).ready(function () {
             background: '#222222'
         }).then((result) => {
             if (result.isConfirmed) {
-                location.href = e.href;
+                location.href = $("#beta-software").attr("href");
             }
         });
    });
