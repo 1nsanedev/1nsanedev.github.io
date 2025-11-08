@@ -210,7 +210,8 @@ footer.dark {
 }
 
 #name-s {
-    margin: 20px 0px 20px 0px;
+    margin: 5px 0px 30px 0px;
+    font-size: 0.8em;
 }
 
 #intro {
